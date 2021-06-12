@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Descrição Rapida</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-md-center">
+  <div class="">
+    <h4>  Desafio: Inserção de comentários de qualidade do produto no sistema de gestão de forma automática.</h4>
+     
+    Detalhes: O inspetor de qualidade necessita fazer a inspeção do produto durante a produção, esta análise precisa ser inserida no sistema para registro. 
+
+    Quando o material é mais crítico, é necessário uma análise mais criteriosa do produto, o que demanda tempo e atenção, e a transcrição em texto para o sistema de gestão se torna lenta e tira o inspetor da tarefa que gera mais valor que é a análise do material. O desafio é possibilitar que enquanto o inspetor analise o produto o texto de sua análise possa ser inserido no sistema de forma paralela e automática. 
+    </p>
+
+  <form action="#" class="form-horizontal" >
+    <div class="form-group" id="descricao_descricao__row">
+      <label class="control-label col-sm-3" for="descricao_descricao" id="descricao">Descrição do defeito</label>
+      <div class="col-sm-15">
+        <textarea class="text form-control" cols="30" name="descricao"  id="descricaoRapida" rows="6"></textarea>
+        <span class="help-block"></span>
+      </div>
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+ 
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js.js"></script>
+
+<div class="pos-f-t">
+  <div class="collapse show" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+                <div class="btn-group">
+            <button type="button" class="btn btn-light">Gerenciar Botões</button>
+            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"           aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" title="Adiciona um novo botão ao menu a baixo" 
+              href="#" >Adicionar Botão</a>
+              <a class="dropdown-item" title="Adiciona um novo  Sub botão ao menu a baixo" 
+              href="#">Adicionar Sub Botão</a>
+              <a class="dropdown-item" title="Editar botão existente" 
+              href="#" >Editar Botão</a>
+              <a class="dropdown-item" title="Editar  Sub botão existente" 
+              href="#" >Editar Sub Botão</a>
+              <a class="dropdown-item" title="Excluir botão existente" 
+              href="#" >Excluir Botão</a>
+              <a class="dropdown-item" title="Excluir  Sub botão existente" 
+              href="#" >Excluir Sub Botão</a>
+            </div>
+          </div>
+
+      <h4 class="text-white">Descrição Rapida</h4>
+
+      <span class="text-white">Este menu foi elaborado para agilizar a descrição de itens tecnicos repetitivos.</span>
+      <br>
+          <!-- Rebarbas -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-warning">Rebarbas</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"           aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" title="Rebarbas intermitentes nas faces do produto" 
+              href="#" de onclick="fastText(this, '..')">Rebarbas intermitentes</a>
+              <a class="dropdown-item" title="Rebarbas em alguns pontos especificos do produto" 
+              href="#" de onclick="fastText(this, '..')">Rebarbas pontuais</a>
+              <a class="dropdown-item" title="Rebarbas intermitentes nas faces do produto" 
+              href="#" de onclick="fastText(this, '..')">Rebarbas generalizada</a>
+              <a class="dropdown-item" title="Rebarbas em todo o produto" 
+              href="#" de onclick="fastText(this, '..')">Rebarbas aresta visivel</a>
+            </div>
+          </div>
+          <!-- Integridade -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-warning">Integridade</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"           aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" title="Rachaduras no produto" 
+              href="#" de onclick="fastText(this, '..')">Rachaduras no produto</a>
+              <a class="dropdown-item" title="Rasgos no produto" 
+              href="#" de onclick="fastText(this, '..')">Rasgos no produto</a>
+              <a class="dropdown-item" title="Micro fissuras no produto" 
+              href="#" de onclick="fastText(this, '..')">Micro fissuras no produto</a>
+              <a class="dropdown-item" title="Amassados no produto" 
+              href="#" de onclick="fastText(this, '..')">Amassados no produto</a>
+            </div>
+          </div>
+          <!-- Rebarbas -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-success">Outra Categoria</button>
+            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"           aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" title="Outra Subcategoria" 
+              href="#" de onclick="fastText(this, '..')">Outra Subcategoria</a>
+              <a class="dropdown-item" title="Outra Subcategoria" 
+              href="#" de onclick="fastText(this, '..')">Outra Subcategoria</a>
+              <a class="dropdown-item" title="Outra Subcategoria" 
+              href="#" de onclick="fastText(this, '..')">Outra Subcategoria</a>
+              <a class="dropdown-item" title="Outra Subcategoria" 
+              href="#" de onclick="fastText(this, '..')">Outra Subcategoria</a>
+            </div>
+          </div>
+          <!-- Rebarbas -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger">Alerta Critico</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"           aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" title="Defeito critico Urgente" 
+              href="#" de onclick="fastText(this, '..')">Defeito critico precisa solucão Urgente</a>
+              <a class="dropdown-item" title="Defeito critico reincidente" 
+              href="#" de onclick="fastText(this, '..')">Defeito critico humano</a>
+              <a class="dropdown-item" title="Defeito critico falha humana" 
+              href="#" de onclick="fastText(this, '..')">Defeito critico transporte</a>
+              <a class="dropdown-item" title="Rebarbas em todo o produto" 
+              href="#" de onclick="fastText(this, '..')">Defeito critico causado por transporte errado</a>
+            </div>
+          </div>
+
+
+
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+<div class="form-group" id="submit_record__row"><div class="col-sm-9 col-sm-offset-3"><input class="btn btn-primary" type="submit" value="Salvar Comentario" /></div></div>
+
+  
+</body>
+</html>
+
+
+
